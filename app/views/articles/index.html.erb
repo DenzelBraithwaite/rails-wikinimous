@@ -1,0 +1,9 @@
+<div class="container">
+<h1>Wikinonymous</h1>
+  <ul>
+  <% @articles.each do |article|%>
+    <h2><li><%= article.title %></li></h2>
+    <p><li><%= article.content %></li></p>
+  <% end %>
+  </ul>
+</div>
